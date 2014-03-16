@@ -261,3 +261,25 @@
 
     playBrowserCast();
 })(window, window.document);
+
+
+//speed control
+function fastForward()
+{
+	var fastForwardButton = document.getElementById('fastForward');
+	if(document.getElementById('browsercast-audio').playbackRate == 1.0)
+	{
+		document.getElementById('browsercast-audio').playbackRate = 1.5;
+		fastForwardButton.setAttribute('style','background-color:rgba(30,81,132,0.3);');
+	}
+	else if(document.getElementById('browsercast-audio').playbackRate == 1.5)
+	{
+		document.getElementById('browsercast-audio').playbackRate = 2.0;
+		fastForwardButton.setAttribute('style','background-color:rgba(0,153,204,0.57);');
+	}
+	else
+	{
+		document.getElementById('browsercast-audio').playbackRate = 1.0;
+		fastForwardButton.setAttribute('style','background-color:rgba(0,0,0,0.57);');
+	}
+};

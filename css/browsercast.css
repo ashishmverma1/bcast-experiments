@@ -5,7 +5,7 @@
 }
 
 #browsercast-audio {
-	width: 100%;
+	width: 80%;
 	margin: auto auto;
 }
 
@@ -25,4 +25,29 @@
 
 .active {
 	background-color: #abc;
+}
+
+#fastForward
+{
+	z-index:999;
+	color:rgb(255,255,255);
+	cursor:pointer;
+	float:right;
+	margin-right:10%;
+	position:relative;
+	background-color:rgba(0,0,0,0.57);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border:	rgb(0,0,0) 1px solid;
+	text-align:center;
+	padding-top:4px;
+	height:24px;
+	width:40px;
+	overflow:hidden;
+	text-shadow:rgb(255,255,255) 0 0 5px;
+	transition:background-color 0.2s ease-in-out;
+	-moz-transition: background-color 0.2s ease-in-out;
+	-webkit-transition: background-color 0.2s ease-in-out;
+	-o-transition: background-color 0.2s ease-in-out;
 }
